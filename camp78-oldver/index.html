@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162820231-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-162820231-1');
+</script>
+<title>紀の川市のワインバルCAMP78 トップページ</title>
+<meta name="discription"　content="和歌山県紀の川市のワインバル、CAMP78です。ワイン・クラフトビールとともに、紀の川市の果物野菜を使った、素材そのものを味わってもらえるような料理を。">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/2910144194.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+	<div class="header-area">
+		<div class="header_logo">
+			<a href="./index.html"><img src="images/logo_black.jpg" alt="camp78のロゴ"></a>
+		</div>
+	</div>
+	<p class="header_news"><a href="./camp78_news.html">【新型コロナウイルス感染症に伴う臨時休業・テイクアウトのご案内はこちら】</a></p>
+</header>
+<section>
+	<ul class="section-box">
+		<li class="section_main_sp"><img src="images/kv-01.png" class="section_kv_sp" alt="ワインとおつまみの画像"></li>
+		<li class="section_main_sp"><img src="images/calpaccho.jpg" class="section_kv_sp" alt="ワインとおつまみの画像"></li>
+		<li class="section_main_sp"><img src="images/pasta.jpg" class="section_kv_sp" alt="ワインとおつまみの画像"></li>
+		<li class="section_main_sp"><img src="images/tako.jpg" class="section_kv_sp" alt="ワインとおつまみの画像"></li>
+		<li class="section_main_sp"><img src="images/ufumayo.jpg" class="section_kv_sp" alt="ワインとおつまみの画像"></li>
+	</ul>
+	<ul class="section-box-pc">
+		<li class="section_main_pc">
+			<img src="images/1.jpg" class="section_kv_pc" alt="ワインとおつまみの画像">
+		</li>
+		<li class="section_main_pc">
+			<img src="images/2.jpg" class="section_kv_pc" alt="ワインとおつまみの画像">
+		</li>
+		<li class="section_main_pc">
+			<img src="images/3.jpg" class="section_kv_pc" alt="ワインとおつまみの画像">
+		</li>
+		<li class="section_main_pc">
+			<img src="images/4.jpg" class="section_kv_pc" alt="ワインとおつまみの画像">
+		</li>
+		<li class="section_main_pc">
+			<img src="images/5.jpg" class="section_kv_pc" alt="ワインとおつまみの画像">
+		</li>
+	</ul>
+	<nav class="navigation">
+		<ul class="nav-home-meta text-center">
+			<li class="nav-home-contens"><a href="about/index.html">About</a></li>
+			<li class="nav-home-contens"><a href="news/index.html">News</a></li>
+			<li class="nav-home-contens"><a href="menu/index.html">Menu</a></li>
+			<li class="nav-home-contens"><a href="access/index.html">Access</a></li>
+			<li class="nav-home-contens"><a href="resavation/index.html">Reservation</a></li>
+			<li class="nav-home-contens">
+				<a href="https://www.instagram.com/camp78_kishigawa/?hl=ja"><i class="fab fa-instagram sns-icon"></i></a>
+			</li>
+			<li class="nav-home-contens">
+				<a href="https://www.facebook.com/CAMP78-102986531115991/?modal=admin_todo_tour"><i class="fab fa-facebook-square sns-icon"></i></a>
+			</li>
+		</ul>
+	</nav>
+</section>
+<footer>
+	<img src="images/logo_white2.jpg" class="footer_logo" alt="Camp78のロゴ">
+	<small>&copy;CAMP78,2019</small>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+<script>
+//$(document).ready(function(){
+//  	$('.section_main').slick({
+//    setting-name: setting-value
+//  	});
+//});
+$(function(){
+	function sliderSetting(){
+		var width = $(window).width();
+		if(width<=1020){
+			$('.section-box-pc').css("display","none");
+			$('.section-box').css("display","block");
+			$('.section-box').slick({
+				accessibility: true,
+				autoplay: true,
+				autoplaySpeed: 3000,
+				dots: true,
+				fade: true,
+			});
+		}else{
+			$('.section-box').css("display","none");
+			$('.section-box-pc').css("display","block");
+			$('.section-box-pc').slick({
+				accessibility: true,
+				autoplay: true,
+				autoplaySpeed: 3000,
+				dots: true,
+				fade: true,
+			});
+		}
+	}
+	sliderSetting();
+    $(window).resize( function() {
+        sliderSetting();
+    });
+});
+	
+</script>
+</body>
+</html>

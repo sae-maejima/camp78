@@ -1,0 +1,488 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face{
+	font-family: 'Noto Sans JP'; /*この文字を表示した時は下に定めたフォントを読み込むという意味*/
+	font-style: normal;
+	font-weight: 400;
+	src:local("NotoSans CJK JP"),
+		url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap'); /*フォントの読み込み元*/
+	}
+html{
+	font-size: 62.5%;
+}
+body{
+  	color: #444;
+	font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+	font-size: 1.6rem;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+a:hover{
+	color: #B0B0B0;
+}
+.text-center{
+	text-align: center;
+}
+/*---------------
+*headerエリア
+-----------------*/
+header{
+	padding-bottom: 40px;
+}
+.header-area{
+	padding: 20px 0 40px;
+	border-bottom: solid 2px #444;
+	margin: 0 20px;
+}
+.header_logo{
+	text-align: center;
+	width: 200px;
+	margin: auto;
+}
+.header_news{
+	margin-top: 40px;
+	text-align: center;
+	font-size: 3rem;
+}
+/*navigation*/
+.nav-meta{
+	display: none;
+}
+.pankuzu-list{
+	display: flex;
+	justify-content: flex-start;
+}
+.pankuzu-contents:first-of-type{
+	margin-left: 20px;
+}
+.pankuzu-contents{
+	margin: 30px 5px 0 0;
+	font-size: 2.5rem;
+}
+/*---------------
+*sectionエリア
+-----------------*/
+.section-tittle{
+	font-size: 8.5rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 60px 0 40px;
+	letter-spacing: 0.05em;
+}
+.section-sentense{
+	margin: 40px 0;
+	font-size: 1.4rem;
+	line-height: 1.3;
+}
+.section-sentense-larege{
+	display: block;
+	font-size: 2.5rem;
+	line-height: 1.5;
+	padding-bottom: 50px;
+}
+.section-box{
+	padding: 0 20px;
+}
+.section_main_sp{
+	padding: 0 40px;
+	display: flex;
+	justify-content: center;
+/*
+	position: relative;
+	padding-top: 90%;
+*/
+}
+.section_main_pc{
+	display: none;
+}
+.section_kv_sp{
+/*
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+*/
+	height: 70vw;
+	width: 80%;
+	margin: auto;
+}
+.section_kv_pc{
+	display: none;
+}
+.section_kv-text-pc{
+	display: none;
+}
+.nav-home-contens{
+	margin-top: 30px;
+	font-size: 3rem;
+}
+.nav-home-contens:last-of-type{
+	margin-bottom: 30px;
+}
+/*---------------
+*footerエリア
+-----------------*/
+footer{
+	text-align: center;
+	border-top: solid 2px #444;
+	padding: 40px 0;
+	margin: 0 20px;
+	font-size: 0.8rem;
+}
+.footer_logo{
+	width: 90px;
+	display: block;
+	margin: auto;
+}
+/*navigation*/
+.nav-footer-icon{
+	width: 30px;
+	height: 30px;
+}
+.nav-footer-contens{
+	margin: 20px auto;
+	font-size: 2rem;
+}
+/*---------------
+*aboutエリア
+-----------------*/
+.schedule-description-title{
+	background-color: #81BEF7;
+	padding: 5px 0;
+	margin: 60px 200px 40px;
+}
+.schedule-description{
+	text-align: left;
+	margin: 0 250px;
+	font-size: 1.5rem;
+}
+.about-description-title{
+	background-color: #81BEF7;
+	padding: 5px 0;
+	margin: 0 200px;
+}
+.about-description-title:first-of-type{
+	margin: 60px 200px 0;
+}
+.about-description{
+	font-size: 1.3rem;
+	margin: 30px auto 30px;
+}
+.calendar-wrap{
+	position:relative;
+	padding-top: 75%;
+}
+.calendar{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+}
+/*---------------
+*accessエリア
+-----------------*/
+.map-wrap{
+	position: relative;
+	padding-top: 30%;
+}
+.maps{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+}
+.wakaden-icon{
+	width: 50px;
+	height: 50px;
+}
+.access-textbox{
+	margin: 40px auto;
+	line-height: 1.5;
+}
+.access-title{
+	display: flex;
+	justify-content: center;
+	font-size: 3.5rem;
+}
+.access-text{
+	display: inline-block;
+	margin-left: 20px;
+}
+.access-text-train{
+	margin-left: 20px;
+	font-size: 3rem;
+}
+/*---------------
+*newsエリア
+-----------------*/
+.news-image{
+	margin: 30px auto;
+	width: 75%;
+	height: 75%;
+}
+.news-description{
+	line-height: 1.5;
+	margin-bottom: 40px;
+}
+.insta-wrap{
+	margin-top: 40px;
+	position: relative;
+	padding-top: 50%;
+}
+.insta{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	
+}
+.iframe-wrap{
+	margin: 0 50px;
+}
+/*---------------
+*resavationエリア
+-----------------*/
+.resavation-sentense{
+	font-size: 2.5rem;
+	margin: 10px;
+}
+/*---------------
+*menuエリア
+-----------------*/
+.sns-text{
+	display: inline;
+}
+.insta-menu-wrap{
+	width: 400px;
+	position: relative;
+	padding-top: 40%;
+	margin: 0 auto 100px;
+}
+.insta-menu{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+}
+.menu-list h2{
+	font-size: 4rem;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.menu-list h3{
+	font-size: 2rem;
+	margin: 20px;
+	text-align: center;
+}
+.menu-list dl{
+	margin:0 200px;
+	text-align: left;
+}
+.menu-list dt{
+	margin: 2px;
+	font-size:1.4rem;
+}
+.menu-list dd{
+	font-size: 1rem;
+	margin-bottom: 30px;
+}
+@media (min-width: 1020px){
+/*---------------
+*headerエリア
+-----------------*/
+	.header_logo{
+		width: 80px;
+	}
+	.header-area{
+		padding: 10px 0;
+	}
+	.header_news{
+		font-size: 2rem;
+		margin: 10px 0;
+	}
+	header{
+		padding-bottom: 10px;
+	}
+	.br-sp{
+		display: none;
+	}
+/*---------------
+*navigationエリア
+-----------------*/
+	.nav-icon{
+		width: 20px;
+		height: 20px;
+	}
+	.sns-icon{
+		width: 20px;
+		height: 20px;
+	}
+	.nav-home-meta{
+		display: flex;
+		justify-content: center;
+	}
+	.nav-home-contens{
+		margin-right: 50px;
+		font-size: 2.5rem;
+	}
+	.nav-meta{
+		display: flex;
+		justify-content: flex-end;
+	}
+	.nav-contens{
+		margin:20px 20px 0 0;
+		font-size: 1.5rem;
+	}
+	.nav-contens:first-of-type{
+		margin: 20px 20px 0;
+	}
+	.pankuzu-contents:first-of-type{
+		margin-left: 20px;
+	}
+	.pankuzu-contents{
+		margin-right: 5px;
+		font-size: 1.5rem;
+	}
+/*---------------
+*sectionエリア
+-----------------*/
+	.section_kv_sp{
+		display: none;
+	}
+	.section_main_sp{
+		display: none;
+	}
+/*
+	.section_main_pc{
+		display: block;
+		position: relative;
+		padding-top: 30%;
+		background-color: #DFC4A5;
+	}
+	.section_kv_pc{
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 40%;
+		height: 40%;
+	}
+	.section_kv-text-pc{
+		color: #444;
+		font-size: 3rem;
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		text-align: center;
+		font-family: "Kokoro";
+		transform: translate(5%,0)
+	}
+*/
+	.section-sentense{
+		font-size: 2rem;
+		margin: 80px auto;
+	}
+	.section-sentense-larege{
+		padding-bottom: 30px;
+		font-size: 3rem;
+	}
+/*---------------
+*aboutエリア
+-----------------*/
+	.schedule-description-title{
+		font-size: 2rem;
+		margin: 100px 400px 20px;
+	}
+	.schedule-description{
+		margin: 0 500px;
+		line-height: 1.5;
+		font-size: 1.7rem;
+	}
+	.about-description-title{
+		font-size: 2rem;
+		margin: 0 400px;
+	}
+	.about-description-title:first-of-type{
+		font-size: 2rem;
+		margin: 20px 400px 0;
+	}
+	.about-description{
+		font-size: 1.7rem;
+	}
+/*---------------
+*accessエリア
+-----------------*/
+	.map-wrap{
+	position: relative;
+	padding-top: 30%;
+	}
+	.maps{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	}
+	.wakaden-icon{
+	width: 30px;
+	height: 30px;
+	}
+	.access-textbox{
+	margin: 40px auto;
+	}
+	.access-title{
+		font-size: 2.5rem;
+	}
+	.access-text-train{
+		font-size: 2.5rem;
+	}
+/*---------------
+*newsエリア
+-----------------*/
+	.news-image{
+		margin: 30px auto;
+		width: 50%;
+		height: 50%;
+	}
+	.iframe-wrap{
+		margin: 0 100px;
+	}
+	.calendar-wrap{
+		position:relative;
+		padding-top: 40%;
+		margin:0 200px 200px;
+	}	
+	.calendar{
+		position: absolute;
+		top: 0;
+		left:0;
+		width: 100%;
+		height: 100%;
+	}
+/*---------------
+*menuエリア
+-----------------*/
+	.insta-menu-wrap{
+		width: 30%;
+		padding-top: 30%;
+	}
+	.menu-list dl{
+		margin-left:550px;
+	}
+	.menu-list dt{
+		font-size: 1.8rem;
+	}
+	.menu-list dd{
+		font-size: 1.3rem;
+	}
+	.section-sentense.menu-sentense{
+		margin: 0 0 20px;
+	}
+}

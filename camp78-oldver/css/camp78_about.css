@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face{
+	font-family: 'Noto Sans JP'; /*この文字を表示した時は下に定めたフォントを読み込むという意味*/
+	font-style: normal;
+	font-weight: 400;
+	src:local("NotoSans CJK JP"),
+		url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap'); /*フォントの読み込み元*/
+	}
+html{
+	font-size: 62.5%;
+}
+body{
+  	color: #444;
+	font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+	font-size: 1.6rem;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+a:hover{
+	color: #B0B0B0;
+}
+/*---------------
+*headerエリア
+-----------------*/
+header{
+	padding-bottom: 40px;
+}
+.header-area{
+	padding: 20px 0 40px;
+	border-bottom: solid 2px #444;
+	margin: 0 20px;
+}
+.header_logo{
+	text-align: center;
+	width: 200px;
+	margin: auto;
+}
+.header_news{
+	margin-top: 40px;
+	text-align: center;
+	font-size: 2.5rem;
+}
+.nav-meta{
+	display: flex;
+}
+.nav-icon{
+	width: 60px;
+	height: 60px;
+}

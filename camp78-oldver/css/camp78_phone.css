@@ -1,0 +1,36 @@
+/*body{background-color: #ffffff;}
+body{font-family: 'Meiryo UI','Apple Chancery','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;}
+body{color: #000000}
+body{text-align: center;}
+body{line-height:2.0}*/
+
+body{background-color: #ffffff;
+  font-family:'Cambria Math','ＭＳ 明朝','MS Mincho','Cochin','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  color: #000000;
+  text-align:center}
+
+#title
+h1{line-height:0.5}
+h1{font-size:17px}
+h1{text-align:left;}
+h2{line-height:1.0}
+
+#introduce
+h3{font-size:24px}
+h4{font-size:17px}
+
+#information
+h5{font-size:17px}
+.box1 {
+    padding: 0.5px 1px;
+    margin: 0.5px 600px;
+    font-weight: bold;
+    border: solid 1.5px #000000;
+}
+.box1 p {
+    margin: 0px;
+    padding: 0px;
+}
+
+#footer{text-align: center;}
+#footer{font-size: 10px;}

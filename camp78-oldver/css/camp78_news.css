@@ -1,0 +1,26 @@
+body{background-color: #ffffff;
+  font-family:'Cambria Math','ＭＳ 明朝','MS Mincho','Cochin','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  color: #000000;
+  text-align:center}
+
+#title
+h1{line-height:0.5}
+h1{font-size:17px}
+h1{text-align:left;}
+h2{line-height:1.0}
+
+#News
+{line-height: 1.0;
+ font-size: 15px
+ text-align:center}
+
+ .box1 {
+     padding: 0.5px 1px;
+     margin: 0.5px 600px;
+     font-weight: bold;
+     border: solid 1.5px #000000;
+ }
+ .box1 p {
+     margin: 0px;
+     padding: 0px;
+ }
